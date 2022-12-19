@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDom from "react-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// 関数を使って画面の要素（コンポーネント）を表現する
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// 引数を受け取らず、戻り値でnullを返すApp関数を作成
+const App = () => {
+  return <h1>test</h1>;
+};
+
+// Appコンポーネントを画面に反映する
+// コンポーネントを画面に反映するためにはReactDom（ライブラリ）の中のRender関数を使用する
+ReactDom.render(<App />, document.getElementById("root"));// index.htmlのrootタグに描画
