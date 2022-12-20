@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 // コンポーネントAppを使用できるようにインポートする
-import App from "./app.jsx";
+import App from "./App.jsx";
 
 // コンポーネント化したAppコンポーネントを画面に反映する
 // コンポーネントを画面に反映するためにはReactDom（ライブラリ）の中のRender関数を使用する
